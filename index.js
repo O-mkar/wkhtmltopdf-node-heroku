@@ -26,7 +26,7 @@ http.createServer(function (req, res) {
       pdf_url = req.url.substr(1),
       pdf_path = './' +pdf_url.replace(/\//g, '_') + '.pdf';
   
-  path.exists(pdf_path, function(exists) {
+  fs.exists(pdf_path, function(exists) {
 
     if (exists) {
       fs.readFile(pdf_path, function(error, content) {
