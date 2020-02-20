@@ -6,7 +6,7 @@ var util = require('util'),
     http = require('http'),
     child;
     
-var wkhtmltopdf_path = process.env.PORT ? '/app/bin/wkhtmltopdf' : 'wkhtmltopdf';
+var wkhtmltopdf_path = process.env.PORT ? '/app/bin/wkhtmltopdf-linux-amd64' : 'wkhtmltopdf';
     
 http.createServer(function (req, res) {
   
